@@ -1,11 +1,29 @@
-<html>
-	<head>
-		<title>Title</title>
-		<link rel="icon" href="favicon.png">
-	</head>
-	<body>
-		<center>
-			<h1>It's works</h1>
-		</center>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="icon" href="favicon.png">
+        <style>
+            .main {
+                text-align: center;
+                margin: 0 auto 0 auto;
+            }
+            .btn{
+                width: 125px;
+                height: 40px;
+            }
+        </style>
+        <script>
+            function sendPush() {
+                alert('Hello!')
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Hello, world!</h1>
+            <button class="btn" onclick="sendPush()">Send</button>
+        </div>
+    </body>
 </html>
