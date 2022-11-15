@@ -64,8 +64,8 @@ function draw_seconds_arrow() {
 
 function draw_minute_arrow(shift) {
     let angle = time.getMinutes() * 6;
-    let x = cos(radians(angle - 90 + shift)) * D / 2/* / 1.2*/ + width/2;
-    let y = sin(radians(angle - 90 + shift)) * D / 2/* / 1.2*/ + height/2;
+    let x = cos(radians(angle - 90 + shift)) * D / 2 / 1.2 + width/2;
+    let y = sin(radians(angle - 90 + shift)) * D / 2 / 1.2 + height/2;
     stroke(0);
     strokeWeight(2);
     line(width/2, height/2, x, y);
@@ -74,8 +74,8 @@ function draw_minute_arrow(shift) {
 
 function draw_hour_arrow(shift) {
     let angle = time.getHours() * 360 / 12;
-    let x = cos(radians(angle - 90 + shift)) * D / 2 /*/ 2*/ + width/2;
-    let y = sin(radians(angle - 90 + shift)) * D / 2 /*/ 2*/ + height/2;
+    let x = cos(radians(angle - 90 + shift)) * D / 2 / 2 + width/2;
+    let y = sin(radians(angle - 90 + shift)) * D / 2 / 2 + height/2;
     stroke(0);
     strokeWeight(2.5);
     line(width/2, height/2, x, y);
