@@ -1,2 +1,2 @@
 # Github pages - very nice free hosting =)
-Go to [github.arsenii-lab.ru](https://github.arsenii-lab.ru)
+Go to [mrKuznetsov698.github.io](https:///mrKuznetsov698.github.io)
