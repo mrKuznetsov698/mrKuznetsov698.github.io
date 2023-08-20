@@ -48,7 +48,7 @@ function draw_values() {
         }
         let x_cos = cos(radians(i - 90)) * D / 2;
         let y_sin = sin(radians(i - 90)) * D / 2;
-        line(x_cos + width/2, y_sin + height/2, x_cos * 1.05 + width/2, y_sin * 1.05 + height/2);
+        line(x_cos + width/2, y_sin + height/2, x_cos * 0.95 + width/2, y_sin * 0.95 + height/2);
     }
 }
 
