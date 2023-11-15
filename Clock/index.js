@@ -1,20 +1,21 @@
 const D = 500;
 const DOT_D = 15;
+const FPS = 30
 let time;
 
 function setup() {
     createCanvas(D + 300, D + 300);
 
     updateTime();
-    setInterval(updateTime, 1);
-    // frameRate(500);
+    frameRate(30);
 }
 
 function draw() {
     background(90);
+    updateTime();
     draw_base();
-    draw_center();
     draw_values();
+    draw_center();
 }
 
 function draw_base() {
@@ -29,7 +30,6 @@ function draw_center() {
     noStroke();
     circle(width/2, height/2, DOT_D);
     draw_arrows();
-    draw_values();
 }
 
 function draw_arrows() {
