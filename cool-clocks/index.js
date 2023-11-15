@@ -1,6 +1,8 @@
 let flag = false;
 let time;
 let date;
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Dec"];
 
 function setup() {
     document.onclick = () => {
@@ -25,5 +27,9 @@ function updateTime() {
     let h = dt.getHours();
     let m = dt.getMinutes();
     let s = dt.getSeconds();
-    time.innerText = `${format(h)}:${format(m)}:${format(s)}`
+    let dn = dt.getDay();
+    let d = dt.getDate();
+    let mn = dt.getMonth();
+    time.innerText = `${format(h)}:${format(m)}:${format(s)}`;
+    date.innerText = `${weekday[dn]}, ${d} ${monthName[mn]}`;
 }
