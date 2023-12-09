@@ -29,7 +29,7 @@ function updateTime() {
     let s = dt.getSeconds();
     let dn = dt.getDay();
     let d = dt.getDate();
-    let mn = dt.getMonth();
+    let mn = dt.getMonth() - 1;
     time.innerText = `${format(h)}:${format(m)}:${format(s)}`;
     date.innerText = `${weekday[dn]}, ${d} ${monthName[mn]}`;
 }
